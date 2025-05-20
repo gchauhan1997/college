@@ -1,0 +1,80 @@
+/* font family Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font family Import */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+a { text-decoration: none;}
+ul { padding: 0;margin: 0; }
+ul li { list-style-type: none; } 
+
+/* navbar */
+nav.navbar { background-color: #020031; }
+.navbar-brand img { max-width: 80px; }
+
+/* .navbar a:hover,
+.navbar img:hover {
+    transition: .99s;
+    transform: scale(.95);
+} */
+
+.navbar .social-icons img {
+    height: 40px;
+    width: 40px;
+}
+
+@media(min-width:992px) {
+    .brand-main {
+        width: 100%;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #dbdbdb;
+    }
+}
+
+/* navbar */
+
+/* hero slider */
+.hero-slider img,
+.hero-slider .carousel{
+    height:calc(100vh - 145px);
+    object-fit: cover;
+}
+.hero-slider .carousel-caption {
+    bottom: 50%;
+}
+/* hero slider */
+
+
+/* footer */
+
+.footer-logo {
+    max-width: 100px;
+}
+
+.footer-section {
+    background-color: #020031;
+    background-image: url("../img/footer-bg-map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+.footer-section .copyright {
+    border-top: 1px solid #312f56;
+    text-align: center;
+}
+
+.footer-section .copyright p {
+    color: #b7b7b7;
+    margin-bottom: 0;
+}
+
+.footer-section  a:hover {
+    text-decoration: underline ;
+}
