@@ -37,7 +37,7 @@
             left: 40px;
             bottom: 100px;
             z-index: -1;
-            border: 2px solid #d7a449;
+            border: 2px solid var(--primary-bg);
         }
 
         .about-section .image-column .inner-column .image {
@@ -117,14 +117,14 @@
             padding: 11px 40px;
             background-color: #ffffff;
             text-transform: capitalize;
-            border: 2px solid #d7a449;
-            font-family: 'Arimo', sans-serif;
+            border: 2px solid var(--primary-bg);
+            
         }
 
 
         .sec-title .title {
             position: relative;
-            color: #d7a449;
+            color: var(--primary-bg);
             font-size: 18px;
             font-weight: 700;
             padding-right: 50px;
@@ -164,22 +164,7 @@
             margin-bottom: 10px;
         }
 
-        .hero-title {
-            background: linear-gradient(135deg, #0d6efd, #6610f2);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .hero-title h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .hero-title p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
+       
     </style>
 </head>
 
@@ -239,12 +224,12 @@
     <!-- header -->
 
     <main class="mam-container-main">
-        <div class="mam-container-main-inner">
+        <div class="mam-container-main-inner py-lg-5 py-3 my-3 my-lg-5">
             <!-- hero section -->
-            <section class="py-3 my-3 my-lg-5 py-lg-5">
+            <section class="about-us-container-main">
 
 
-                <section class="about-section my-3 my-lg-5">
+                <section class="about-section">
                     <div class="container-lg">
                         <div class="row g-4">
 
@@ -252,7 +237,7 @@
                             <div class="content-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column">
                                     <div class="sec-title mb-3">
-                                        <div class="title">About Us</div>
+                                        <div class="title primary-color">About Us</div>
                                         <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
                                     </div>
                                     <div class=" mb-3">
@@ -274,7 +259,7 @@
                                     <div class="mb-2 fw-semibold mb-4">Request Quote:
                                         <span class="">freequote@gmail.com</span>
                                     </div>
-                                    <a href="contact-us.html" class="theme-btn btn-style-three">Contact us</a>
+                                    <a href="founders.html" class="theme-btn btn-style-three">Our Founders</a>
                                 </div>
                             </div>
 
@@ -297,14 +282,14 @@
                     </div>
                 </section>
 
-                <section class="about-section my-3 my-lg-5">
+                <section class="about-section py-3 my-3 my-lg-5">
                     <div class="container-lg">
                         <div class="row g-4">
                             <!--Image Column-->
                             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <div class="image">
-                                        <img src="assets/img/building/building (6).jpg" alt="img">
+                                        <img src="assets/img/building/building (8).jpg" alt="img">
                                         <div class="overlay-box">
                                             <div class="year-box text-light"><span class="number">30</span>Years <br>
                                                 Experience
@@ -319,7 +304,7 @@
                             <div class="content-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column">
                                     <div class="sec-title mb-3">
-                                        <div class="title">Our Mission</div>
+                                        <div class="title primary-color">Our Mission</div>
                                         <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
                                     </div>
                                     <div class=" mb-3">
@@ -340,7 +325,7 @@
                     </div>
                 </section>
 
-                <section class="about-section my-3 my-lg-5">
+                <section class="about-section py-3 my-3 my-lg-5">
                     <div class="container-lg">
                         <div class="row g-4">
 
@@ -348,7 +333,7 @@
                             <div class="content-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column">
                                     <div class="sec-title mb-3">
-                                        <div class="title">Our Vision</div>
+                                        <div class="title primary-color">Our Vision</div>
                                         <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
                                     </div>
                                     <div class=" mb-3">
@@ -368,7 +353,7 @@
                             <div class="image-column col-md-6 col-sm-12 col-xs-12">
                                 <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <div class="image">
-                                        <img src="assets/img/building/building (6).jpg" alt="img">
+                                        <img src="assets/img/building/building (3).jpeg" alt="img">
                                         <div class="overlay-box">
                                             <div class="year-box text-light"><span class="number">30</span>Years <br>
                                                 Experience
@@ -383,23 +368,28 @@
                     </div>
                 </section>
 
-                <section class="my-3 my-lg-5">
+                <section class="my-3 my-lg-5 py-3">
                     <div class="container my-3 my-lg-5">
                         <h2 class="mb-4 fw-bold">Facilities at Mantaram Mahavidyalaya</h2>
                         <!-- Library Section -->
                         <div class="card mb-4 p-4 shadow-sm bg-white">
                             <div class="d-flex align-items-start">
                                 <i class="bi bi-journal-bookmark-fill icon-box"></i>
-                                
+
                                 <div class="ms-3">
                                     <h4>Mantaram Central Library</h4>
                                     <p>
-                                       Mahavidiyalaya’s Central called “Mantaram Central Library is a very rich, managed, planned and computerized learning center for Information Technology, Management and Sciences having a collection of best books. Apart from above fields, it has a diverse specification of journals, magazines for other classes too. Library holds leading Indian and International journals and magazines with round the year facility.
+                                        Mahavidiyalaya’s Central called “Mantaram Central Library is a very rich,
+                                        managed, planned and computerized learning center for Information Technology,
+                                        Management and Sciences having a collection of best books. Apart from above
+                                        fields, it has a diverse specification of journals, magazines for other classes
+                                        too. Library holds leading Indian and International journals and magazines with
+                                        round the year facility.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                       
+
 
                         <!-- Lecture Halls, Seminar Hall, Auditorium -->
                         <div class="row g-4 mb-4">
@@ -407,21 +397,25 @@
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-easel2-fill icon-box"></i>
                                     <h5>Our Lecture Halls</h5>
-                                    <p>Spacious, airy class rooms having learning aids viz., OHP, White Board, TV, Educational CD's, LCD and Slide Projector with sufficient and proper seating arrangement.</p>
+                                    <p>Spacious, airy class rooms having learning aids viz., OHP, White Board, TV,
+                                        Educational CD's, LCD and Slide Projector with sufficient and proper seating
+                                        arrangement.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-people-fill icon-box"></i>
                                     <h5>Our Seminar Hall</h5>
-                                    <p>Adequate seating plans and capacity, purposely for debates, seminars, conferences and lectures.</p>
+                                    <p>Adequate seating plans and capacity, purposely for debates, seminars, conferences
+                                        and lectures.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-house-fill icon-box"></i>
                                     <h5>Auditorium</h5>
-                                    <p>MAM is state of art auditorium with seating capacity of 800 plus. It is used for all types of formal assembly like Guest lecture, award ceremonies etc.</p>
+                                    <p>MAM is state of art auditorium with seating capacity of 800 plus. It is used for
+                                        all types of formal assembly like Guest lecture, award ceremonies etc.</p>
                                 </div>
                             </div>
                         </div>
@@ -432,7 +426,8 @@
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-controller icon-box"></i>
                                     <h6>Shri Agrasen Indoor Sports Centre</h6>
-                                    <p>Mahavidyalaya is also providing facility of indoor sports for students to overcome them from their tiring schedule.</p>
+                                    <p>Mahavidyalaya is also providing facility of indoor sports for students to
+                                        overcome them from their tiring schedule.</p>
                                 </div>
                             </div>
                             <!-- <div class="col-md-3">
@@ -446,26 +441,31 @@
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-bus-front-fill icon-box"></i>
                                     <h6>Bus Facility</h6>
-                                    <p>College has its own bus facility for students, plying to and from every corner of city.</p>
+                                    <p>College has its own bus facility for students, plying to and from every corner of
+                                        city.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card p-3 h-100 shadow-sm bg-white">
                                     <i class="bi bi-cup-straw icon-box"></i>
                                     <h6>Cafeteria</h6>
-                                    <p>College has a well-equipped canteen inside the campus in a hygienic environment, serving coffee/tea/soft drinks, natural fruit juice and snacks.</p>
+                                    <p>College has a well-equipped canteen inside the campus in a hygienic environment,
+                                        serving coffee/tea/soft drinks, natural fruit juice and snacks.</p>
                                 </div>
                             </div>
                         </div>
 
-                          <div class="card mb-4 p-4 shadow-sm bg-white">
+                        <div class="card mb-4 p-4 shadow-sm bg-white">
                             <div class="d-flex align-items-start">
                                 <!-- <i class="bi bi-journal-bookmark-fill icon-box"></i> -->
                                 <i class="bi bi-award-fill icon-box primary-bg"></i>
                                 <div class="ms-3">
                                     <h4>Scholarship</h4>
                                     <p>
-                                       Maharaja Agrasen Shiksha Samiti (Regd.) awards scholarships to meritorious students. Mantaram scholarship for needy &meritorious students of six different courses. Diamond Medal is also introduced to the student who secure 85% and above marks in any courses.
+                                        Maharaja Agrasen Shiksha Samiti (Regd.) awards scholarships to meritorious
+                                        students. Mantaram scholarship for needy &meritorious students of six different
+                                        courses. Diamond Medal is also introduced to the student who secure 85% and
+                                        above marks in any courses.
                                     </p>
                                 </div>
                             </div>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Messages – Maharaja Agrasen Mahavidyalaya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #dbdbdb;
+    }
+
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary-bg)
+    }
+
+    .message-card {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .message-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .social-icons a {
+      color: var(--primary-bg);
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="w-100 sticky-top">
+    <div class="bg-white upper-header w-100 d-none d-md-block">
+      <div class="d-flex align-items-center container-lg justify-content-between py-2">
+        <div class="left">
+          <div class="social-icons d-flex gap-3">
+            <a class="fs-5" href=""><i class="bi bi-facebook"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-instagram"></i></a>
+
+            <a class="fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-telephone-fill"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="right">
+          <p class="m-0 fw-semibold"> <i class="bi bi-geo-alt-fill me-1"></i> Bareilly-Lucknow Highway,
+            Bareilly, Uttar Pradesh </p>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg shadow " data-bs-theme="dark">
+      <div class="container-lg w-100">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.webp" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Admisson</a>
+            </li>
+          </ul>
+          <div class="navbar-text">
+            <a href="contact-us.html" class="btn btn-danger rounded-pill px-3">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
+     <main class="mam-container-main">
+        <div class="mam-container-main-inner py-lg-5 py-3 my-3 my-lg-5">
+            <section class="founders-container-main">
+              <div class="container-lg">
+                <div class="heading-section mb-4">
+                  <p class="m-0 fw-semibold fs-6 primary-color">Messages from Our Leadership</p>
+                  <h2 class="fw-bold"> Maharaja Agrasen Mahavidyalaya, Bareilly</h2>
+                  
+                </div>
+                <!-- President -->
+                <div class="card mb-4 shadow-sm message-card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start justify-content-between">
+                      <div class="d-flex gap-3 align-items-center">
+                        <img src="assets/img/management/President.JPG" alt="President" class="profile-img">
+                        <div>
+                          <h4 class="card-title fw-bold"> Anil Kumar Agarwal</h4>
+                          <span class="text-muted fw-semibold">President</span>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tel:+919818000001"><i class="bi bi-telephone"></i> +91-9818000001</a>
+                          </li>
+                          <li><a class="dropdown-item" href="mailto:president@mamcollege.ac.in"><i class="bi bi-envelope"></i>
+                              president@mamcollege.ac.in</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <p>Dear Students,</p>
+                    <p>It is with great pleasure that I welcome you to Maharaja Agrasen Mahavidyalaya, a place where knowledge meets
+                      opportunity, and ambition transforms into achievement.</p>
+                    <p>At MAM, we are committed to fostering a dynamic and inclusive learning environment that empowers our students
+                      to grow academically, personally, and professionally. With a dedicated faculty, modern facilities, and a
+                      vibrant campus life, we strive to ensure that each student receives a holistic education that prepares them
+                      for the challenges of the future.</p>
+                    <p>Our college offers a wide range of academic programs, extracurricular activities, sports activity through
+                      Shri Agrasen Cricket Academy & Shri Agrasen Indoor sports Center and support services designed to nurture your
+                      talents and help you reach your full potential. Whether you are beginning your higher education journey or
+                      transferring from another institution, we are here to support you every step of the way.</p>
+                    <p>We invite you to become a part of our community, where innovation, integrity, and excellence are not just
+                      values – they are a way of life.</p>
+                    <p>Welcome to Maharaja Agrasen Mahavidyalaya – your future begins here.</p>
+                    <p class="fw-bold mb-0">Warm regards,<br>Anil Kumar Agarwal (President)</p>
+                  </div>
+                </div>
+
+                <!-- General Secretary -->
+                <div class="card mb-4 shadow-sm message-card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start justify-content-between">
+                      <div class="d-flex gap-3 align-items-center">
+                        <img src="assets/img/management/General Secretary.JPG" alt="General Secretary" class="profile-img">
+                        <div>
+                          <h4 class="card-title fw-bold"> Shashi Bhushan Agarwal</h4>
+                          <span class="text-muted fw-semibold">General Secretary</span>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tel:+919818000002"><i class="bi bi-telephone"></i> +91-9818000002</a>
+                          </li>
+                          <li><a class="dropdown-item" href="mailto:secretary@mamcollege.ac.in"><i class="bi bi-envelope"></i>
+                              secretary@mamcollege.ac.in</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <p>Education is a continuous process where in educational institution and its teaching staff plays a vital role
+                      in imparting education. MAHARAJA AGRASEN MAHAVIDYALAYA, BAREILLY is one of the most eminent institution in
+                      Rohilkhand Division, imparting the most efficient valuable and practical education in the field of science,
+                      Commerce, Management, Computer, Arts, Bio Technology etc under the guidance of the most dynamic and efficient
+                      teaching staff.</p>
+                    <p>We have graduation courses in PCM, ZBC, Commerce, honors in Commerce, Arts, Home Science. B.Ed, BCA , BBA &
+                      B.Sc. Bio Technology etc.We also impart skilled knowledge and education in post graduate programme like
+                      Physics, Chemistry, Mathematics, Zoology, Botany, Commerce, Education, Geography, English Litrature, Political
+                      Science and PGDCA, etc. the Environment of Mahavidyalaya is very pleasant and calm with lavish greenery.</p>
+                    <p>For Personality Development Samiti has established Innovation Centre, Idea Cafe, Sri Agrasen Cricket Academy,
+                      Sri Agrasen Book Bank, Personality Development Classes, Foreign Language Classes, Language Lab, Mat-Lab,
+                      Talent Hunt Competition etc.</p>
+                    <p>This year we are introducing a very precious course B.Sc. Biotechnology for better carrer of the students of
+                      Rohilkhand Division.</p>
+                    <p>
+                      I appeal the youngsters to make the best selection for their career and welcome all those who have joined us.
+                    </p>
+                    <p>"The One and the Whole Work of Education may be summed up in the concepts for morality as Love, Sympathy,
+                      Co-operation, Sacrifice and social service" (Hervart)</p>
+                    <p class="fw-bold mb-0">Shashi Bhushan Agarwal</p>
+                  </div>
+                </div>
+
+                <!-- Director -->
+                <div class="card mb-4 shadow-sm message-card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/img/management/Director.JPG" alt="Director" class="profile-img">
+                        <div>
+                          <h4 class="card-title fw-bold"> Dr. Praveen K. Agarwal</h4>
+                          <span class="text-muted fw-semibold">Director</span>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tel:+919818000003"><i class="bi bi-telephone"></i> +91-9818000003</a>
+                          </li>
+                          <li><a class="dropdown-item" href="mailto:director@mamcollege.ac.in"><i class="bi bi-envelope"></i>
+                              director@mamcollege.ac.in</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <p>Established in 1998 as a Science college, Maharaja Agrasen Mahavidyalaya has grown into a leading institution
+                      in the Rohilkhand region, offering a vibrant and inclusive academic environment. With a student strength of
+                      over 2200 and a commitment to quality education, we focus on Outcome-Based Education that emphasizes student
+                      learning through modern teaching methodologies and practical exposure.</p>
+                    <p>
+                      At our core lies the vision of nurturing talent, promoting critical thinking, and preparing students to meet
+                      the demands of a dynamic global landscape. Our state-of-the-art infrastructure, experienced faculty, and
+                      holistic approach to learning ensure that students not only gain knowledge but also the skills to succeed.
+                    </p>
+                    <p>Join us in this journey of academic excellence and innovation.</p>
+                    <p class="fw-bold mb-0">Dr. Praveen K. Agarwal (Ex Dean, Commerce – MJP Rohilkhand University)</p>
+                  </div>
+                </div>
+
+                <!-- Principal -->
+                <div class="card mb-4 shadow-sm message-card">
+                  <div class="card-body">
+                    <div class="d-flex align-items-start justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="assets/img/management/Principal.jpeg" alt="Principal" class="profile-img">
+                        <div>
+                          <h4 class="card-title fw-bold"> Dr. Saurabh Agarwal</h4>
+                          <span class="text-muted fw-semibold">Principal</span>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="tel:+919818000004"><i class="bi bi-telephone"></i> +91-9818000004</a>
+                          </li>
+                          <li><a class="dropdown-item" href="mailto:principal@mamcollege.ac.in"><i class="bi bi-envelope"></i>
+                              principal@mamcollege.ac.in</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <p>"Desire is the key to motivation, but it is determination, commitment, and an unrelenting pursuit of your
+                      goals—a commitment to excellence—that will enable you to attain the success you seek."</p>
+                    <p>Maharaja Agrasen Mahavidyalaya has maintained its distinct position in the field of quality education. We
+                      take pride in informing you all that we are celebrating 28+ glorious years of excellence in higher education.
+                    </p>
+                    <p>At our Mahavidyalaya, we focus especially on the all-round development of our students. We provide
+                      opportunities for them to manifest their inner abilities and groom their personalities. At MAM, we are
+                      determined to shape our students into thinkers, professionals, and proud citizens of the world by focusing on:
+                    </p>
+                    <ul class="mb-2 fw-semibold">
+                      <li class="mb-1">Development & training for placement and start-ups</li>
+                      <li class="mb-1">Learning by doing</li>
+                      <li class="mb-1">All-round development through fun activities</li>
+                      <li class="mb-1">Always remember: <i class="text-primary"> "Together we can, and we will make a difference."
+                        </i></li>
+
+                    </ul>
+
+                    <p class="fw-bold mb-0">Dr. Saurabh Agarwal</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </section>
+        </div>
+      </main>
+  <!-- footer -->
+  <footer class="footer-section">
+    <div class="container-lg footer-top py-lg-5 py-4">
+      <div class="row gy-4 gt-md-5">
+        <!-- ROW-->
+        <div class="col-sm-6 col-lg-4">
+          <div class="about-widget">
+            <img class="footer-logo" src="assets/img/logo.webp" alt="logo">
+            <p class="fs-6 my-3 text-light"> Maharaja Agrasen Shiksha Samiti (Regd.), <br> Maharaja Agrasen
+              Mahavidyalaya Bareilly - UP</p>
+            <div class="social-icons d-flex gap-3">
+              <a class="text-light fs-5" href=""><i class="bi bi-facebook"></i></a>
+              <a class="text-light fs-5" href=""><i class="bi bi-instagram"></i></a>
+              <a class="text-light fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+              <a class="text-light fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW-->
+        <div class="col-sm-6 col-lg-2 col-6">
+          <h6 class="fw-semibold text-light mb-4">Usefull Links</h6>
+          <div class="">
+            <ul class="p-0">
+              <li class="pb-2"><a class="text-light" href="">Home</a></li>
+              <li class="pb-2"><a class="text-light" href="">About us</a></li>
+              <li class="pb-2"><a class="text-light" href="">Services</a></li>
+              <li class="pb-2"><a class="text-light" href="">Events</a></li>
+              <li class="pb-2"><a class="text-light" href="">Features</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- ROW-->
+        <div class="col-sm-6 col-lg-2 col-6">
+          <h6 class="fw-semibold text-light mb-4">Pages</h6>
+          <div class="">
+            <ul class="p-0">
+              <li class="pb-2"><a class="text-light" href="">Home</a></li>
+              <li class="pb-2"><a class="text-light" href="">About us</a></li>
+              <li class="pb-2"><a class="text-light" href="">Services</a></li>
+              <li class="pb-2"><a class="text-light" href="">Events</a></li>
+              <li class="pb-2"><a class="text-light" href="">Features</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- ROW-->
+        <div class="col-sm-6 col-lg-4 footer-widget">
+          <h6 class="text-light fw-semibold mb-4">Contact Us</h6>
+          <ul class="contact text-light">
+
+
+            <li>
+              <p><i class="bi bi-envelope me-1"></i> <a href="mailto:" class="text-light">
+                  infodeercreative@gmail.com </a></p>
+            </li>
+            <li>
+              <p><i class="bi bi-phone-fill me-1"></i> <a class="text-light" href="tel:+"> (+88) 111 555
+                  666 </a></p>
+            </li>
+            <li>
+              <p> <i class="bi bi-clock-fill me-1"></i> Monday - Friday, 08:00AM - 06:00 PM</p>
+            </li>
+            <li>
+              <p> <i class="bi bi-geo-alt-fill me-1"></i> 11th Km. Milestone, Bareilly-Lucknow Highway,
+                near Transport Nagar, Bareilly, Uttar Pradesh 243123 </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-3">
+      <div class="container-lg">
+        <p>
+          Copyright ©
+          <script>document.write(new Date().getFullYear());</script> All rights reserved - Maharaja Agrasen
+          Mahavidyalaya Bareilly
+
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

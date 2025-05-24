@@ -9,6 +9,233 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    
+    .contact .contact-info-box {
+      background-color: #020031;
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+      padding: 25px;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      color: #e0d7d7;
+    }
+
+    .contact .contact-info-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact .contact-info-box .icon-box {
+      background-color: color-mix(in srgb, #fff, transparent 90%);
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact .contact-info-box p {
+      margin-bottom: 4px;
+    }
+
+    .contact .contact-info-box .icon-box i {
+      font-size: 24px;
+    }
+
+    .contact .contact-info-box .info-content h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+
+    .contact .map-section {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .contact .map-section iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .contact .form-container-overlap {
+      position: relative;
+      margin-top: -150px;
+      margin-bottom: 60px;
+      z-index: 10;
+    }
+
+    .contact .contact-form-wrapper {
+
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+    }
+
+    .contact .contact-form-wrapper h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .contact .contact-form-wrapper h2:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+
+    .contact .contact-form-wrapper .form-group {
+      margin-bottom: 20px;
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon {
+      position: relative;
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      z-index: 10;
+      color: var(--primary-color);
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon i.message-icon {
+      top: 28px;
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon textarea+i {
+      top: 25px;
+      transform: none;
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon .form-control {
+      border-radius: 8px;
+      padding: 12px 15px 12px 45px;
+      height: 3.5rem;
+      color: #000;
+      background-color: #fff;
+      font-size: 15px;
+      border: 1px solid #dbdbdb
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon .form-control:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-color), transparent 90%);
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon .form-control::placeholder {
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+    }
+
+    .contact .contact-form-wrapper .form-group .input-with-icon textarea.form-control {
+      height: 180px;
+      resize: none;
+      padding-top: 15px;
+    }
+
+    .contact .contact-form-wrapper .btn-submit {
+      background-color: var(--accent-color);
+      border: none;
+      color: var(--contrast-color);
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+    }
+
+    .contact .contact-form-wrapper .btn-submit:hover {
+      background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
+    }
+
+    .contact .contact-form-wrapper .btn-submit:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
+    }
+
+    .contact .contact-form-wrapper .loading,
+    .contact .contact-form-wrapper .error-message,
+    .contact .contact-form-wrapper .sent-message {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 992px) {
+      .contact .form-container-overlap {
+        margin-top: -120px;
+      }
+
+      .contact .contact-form-wrapper {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact .contact-info-box {
+        margin-bottom: 20px;
+      }
+
+      .contact .form-container-overlap {
+        margin-top: -100px;
+      }
+
+      .contact .contact-form-wrapper {
+        padding: 25px;
+      }
+
+      .contact .contact-form-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .contact .map-section {
+        height: 450px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .contact .form-container-overlap {
+        margin-top: -80px;
+      }
+
+      .contact .contact-form-wrapper {
+        padding: 20px;
+      }
+
+      .contact .btn-submit {
+        width: 100%;
+      }
+
+      .contact .map-section {
+        height: 400px;
+      }
+    }
+  </style>
 </head>
 
 
@@ -67,8 +294,8 @@
   <!-- header -->
 
   <main class="mam-container-main">
-    <div class="mam-container-main-inner">
-      <div class="contact-us-section py-3 my-3 py-lg-5 my-lg-5">
+    <div class="mam-container-main-inner  py-3 my-3 py-lg-5 my-lg-5">
+      <div class="contact-us-section">
         <div class="container-lg">
           <section id="contact" class="contact section">
 
@@ -120,8 +347,11 @@
 
             <!-- Google Maps (Full Width) -->
             <div class="map-section " data-aos="fade-up" data-aos-delay="200">
-              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.1180701789776!2d79.48772077615573!3d28.29474729933853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a002393560934b%3A0xaf9d9e7460f64f7c!2sMaharaja%20Agrasen%20Mahavidyalaya%20Bareilly!5e0!3m2!1sen!2sin!4v1747757057762!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.1180701789776!2d79.48772077615573!3d28.29474729933853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a002393560934b%3A0xaf9d9e7460f64f7c!2sMaharaja%20Agrasen%20Mahavidyalaya%20Bareilly!5e0!3m2!1sen!2sin!4v1747757057762!5m2!1sen!2sin"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!-- Contact Form Section (Overlapping) -->
@@ -271,19 +501,22 @@
     </div>
     <!-- copyright -->
     <div class="copyright py-3">
-      <div class="container-lg">
+      <div class="container-lg d-flex justify-content-between align-items-center gap-3 flex-wrap">
         <p>
           Copyright ©
           <script>document.write(new Date().getFullYear());</script> All rights reserved - Maharaja Agrasen
           Mahavidyalaya Bareilly
 
         </p>
+        <p>Total Visitors: <span id="visitor-count">1000</span></p>
+
       </div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
