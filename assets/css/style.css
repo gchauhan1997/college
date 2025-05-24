@@ -40,8 +40,12 @@
 :root {
   scroll-behavior: smooth;
   --primary-color: #f36b3b;
+  --primary-bg:#020031;
 }
 
+.primary-bg {
+    color: var(--primary-bg);
+}
 
 .priamry-btn {
     background-color: var(--primary-color);

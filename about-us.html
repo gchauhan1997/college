@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Maharaja Agrasen Mahavidyalaya Bareilly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .about-section .content-column .email {
+            position: relative;
+            color: #252525;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .about-section .image-column {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .about-section .image-column .inner-column {
+            position: relative;
+            padding: 40px 40px 0px 0px;
+            margin-left: 50px;
+        }
+
+        .about-section .image-column .inner-column:after {
+            position: absolute;
+            content: '';
+            right: 0px;
+            top: 0px;
+            left: 40px;
+            bottom: 100px;
+            z-index: -1;
+            border: 2px solid #d7a449;
+        }
+
+        .about-section .image-column .inner-column .image {
+            position: relative;
+        }
+
+        .about-section .image-column .inner-column .image:before {
+            position: absolute;
+            content: '';
+            left: -50px;
+            bottom: -50px;
+            width: 299px;
+            height: 299px;
+            background: url(img/pattern-2.png) no-repeat;
+        }
+
+        .about-section .image-column .inner-column .image img {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+
+        .about-section .image-column .inner-column .image .overlay-box {
+            position: absolute;
+            left: 40px;
+            bottom: 48px;
+        }
+
+        .about-section .image-column .inner-column .image .overlay-box .year-box {
+            position: relative;
+            color: #252525;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.4em;
+            padding-left: 125px;
+        }
+
+        .about-section .image-column .inner-column .image .overlay-box .year-box .number {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 110px;
+            height: 110px;
+            color: #d7a449;
+            font-size: 68px;
+            font-weight: 700;
+            line-height: 105px;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+        }
+
+        .about-section .btn-style-three:before {
+            position: absolute;
+            content: '';
+            left: 10px;
+            top: 10px;
+            z-index: -1;
+            right: -10px;
+            bottom: -10px;
+            background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
+        }
+
+        .about-section .btn-style-three:hover {
+            color: #ffffff;
+            background: #d7a449;
+        }
+
+        .about-section .btn-style-three {
+            position: relative;
+            line-height: 24px;
+            color: #252525;
+            font-size: 15px;
+            font-weight: 700;
+            background: none;
+            display: inline-block;
+            padding: 11px 40px;
+            background-color: #ffffff;
+            text-transform: capitalize;
+            border: 2px solid #d7a449;
+            font-family: 'Arimo', sans-serif;
+        }
+
+
+        .sec-title .title {
+            position: relative;
+            color: #d7a449;
+            font-size: 18px;
+            font-weight: 700;
+            padding-right: 50px;
+            margin-bottom: 15px;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+
+        .sec-title .title:before {
+            position: absolute;
+            content: '';
+            right: 0px;
+            bottom: 7px;
+            width: 40px;
+            height: 1px;
+            background-color: #bbbbbb;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .card {
+            /* border: none; */
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .icon-box {
+            font-size: 2rem;
+            color: var(--primary-bg);
+            margin-bottom: 10px;
+        }
+
+        .hero-title {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-title h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-title p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- header -->
+    <header class="w-100 sticky-top">
+        <div class="bg-white upper-header w-100 d-none d-md-block">
+            <div class="d-flex align-items-center container-lg justify-content-between py-2">
+                <div class="left">
+                    <div class="social-icons d-flex gap-3">
+                        <a class="fs-5" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-instagram"></i></a>
+
+                        <a class="fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-telephone-fill"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="m-0 fw-semibold"> <i class="bi bi-geo-alt-fill me-1"></i> Bareilly-Lucknow Highway,
+                        Bareilly, Uttar Pradesh </p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg shadow " data-bs-theme="dark">
+            <div class="container-lg w-100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.webp" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admisson</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-text">
+                        <a href="contact-us.html" class="btn btn-danger rounded-pill px-3">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+
+    <main class="mam-container-main">
+        <div class="mam-container-main-inner">
+            <!-- hero section -->
+            <section class="py-3 my-3 my-lg-5 py-lg-5">
+
+
+                <section class="about-section my-3 my-lg-5">
+                    <div class="container-lg">
+                        <div class="row g-4">
+
+                            <!--Content Column-->
+                            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column">
+                                    <div class="sec-title mb-3">
+                                        <div class="title">About Us</div>
+                                        <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
+                                    </div>
+                                    <div class=" mb-3">
+                                        <p class="m-0">Maharaja Agrasen Shiksha Samiti (Regd.), Bareilly is a charitable
+                                            trust of socially dedicated trustees. On 4th February, 1995 Maharaja Agrasen
+                                            Shiksha Samiti laid down the foundation stone of Maharaja Agrasen
+                                            Mahavidyalaya at 11th k.m. milestone on Bareilly- Lucknow National Highway
+                                            (NH-24). Maharaja Agrasen Mahavidyalaya started imparting education in 1998
+                                            with students of B.Sc. classes. After the continuous efforts of the faculty,
+                                            staff and able guidance of members of Maharaja Agrasen Shiksha Samiti,
+                                            College has evolved as one of the premier centre of higher education in
+                                            Bareilly city, embracing more than 2200 students getting education in
+                                            science, Arts, Commerce, Education, Computers and Management streams etc in
+                                            21 Courses. MAM also got the Recognition from AICTE for BBA and BCA Courses.
+                                            We are also trying to impart computer accounting education to every student.
+                                            We also Started Shri Agrasen Cricket Academy and Idea Café, Innovation
+                                            Centre & NATS under the State and Central Government Scheme.</p>
+                                    </div>
+                                    <div class="mb-2 fw-semibold mb-4">Request Quote:
+                                        <span class="">freequote@gmail.com</span>
+                                    </div>
+                                    <a href="contact-us.html" class="theme-btn btn-style-three">Contact us</a>
+                                </div>
+                            </div>
+
+                            <!--Image Column-->
+                            <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="image">
+                                        <img src="assets/img/building/building (6).jpg" alt="img">
+                                        <div class="overlay-box">
+                                            <div class="year-box text-light"><span class="number">30</span>Years <br>
+                                                Experience
+                                                <br> Working
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section my-3 my-lg-5">
+                    <div class="container-lg">
+                        <div class="row g-4">
+                            <!--Image Column-->
+                            <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="image">
+                                        <img src="assets/img/building/building (6).jpg" alt="img">
+                                        <div class="overlay-box">
+                                            <div class="year-box text-light"><span class="number">30</span>Years <br>
+                                                Experience
+                                                <br> Working
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Content Column-->
+                            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column">
+                                    <div class="sec-title mb-3">
+                                        <div class="title">Our Mission</div>
+                                        <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
+                                    </div>
+                                    <div class=" mb-3">
+                                        <p class="m-0">Our motto is to provide education to all. We shape young
+                                            professionals with creative minds to conquer the present and future
+                                            challenges of the socio-economic fabric of society by dissemination of
+                                            relevant knowledge through structured learning system, nurturing of talent
+                                            and building a learning environment to promote creativity and leadership.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section my-3 my-lg-5">
+                    <div class="container-lg">
+                        <div class="row g-4">
+
+                            <!--Content Column-->
+                            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column">
+                                    <div class="sec-title mb-3">
+                                        <div class="title">Our Vision</div>
+                                        <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
+                                    </div>
+                                    <div class=" mb-3">
+                                        <p class="m-0">We look forward to train managers and professionals to take up
+                                            challenges of a rapidly growing dynamic business and social environment,
+                                            maintaining equilibrium between supply and demand of high quality
+                                            professionals, implementing measures for the betterment of the
+                                            post-graduation level system of education and to encourage understanding of
+                                            strategic perception to fulfill the mission of the organization in the fast
+                                            changing global business environment.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--Image Column-->
+                            <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="image">
+                                        <img src="assets/img/building/building (6).jpg" alt="img">
+                                        <div class="overlay-box">
+                                            <div class="year-box text-light"><span class="number">30</span>Years <br>
+                                                Experience
+                                                <br> Working
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my-3 my-lg-5">
+                    <div class="container my-3 my-lg-5">
+                        <h2 class="mb-4 fw-bold">Facilities at Mantaram Mahavidyalaya</h2>
+                        <!-- Library Section -->
+                        <div class="card mb-4 p-4 shadow-sm bg-white">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-journal-bookmark-fill icon-box"></i>
+                                
+                                <div class="ms-3">
+                                    <h4>Mantaram Central Library</h4>
+                                    <p>
+                                       Mahavidiyalaya’s Central called “Mantaram Central Library is a very rich, managed, planned and computerized learning center for Information Technology, Management and Sciences having a collection of best books. Apart from above fields, it has a diverse specification of journals, magazines for other classes too. Library holds leading Indian and International journals and magazines with round the year facility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                        <!-- Lecture Halls, Seminar Hall, Auditorium -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-easel2-fill icon-box"></i>
+                                    <h5>Our Lecture Halls</h5>
+                                    <p>Spacious, airy class rooms having learning aids viz., OHP, White Board, TV, Educational CD's, LCD and Slide Projector with sufficient and proper seating arrangement.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-people-fill icon-box"></i>
+                                    <h5>Our Seminar Hall</h5>
+                                    <p>Adequate seating plans and capacity, purposely for debates, seminars, conferences and lectures.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-house-fill icon-box"></i>
+                                    <h5>Auditorium</h5>
+                                    <p>MAM is state of art auditorium with seating capacity of 800 plus. It is used for all types of formal assembly like Guest lecture, award ceremonies etc.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Facilities -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-controller icon-box"></i>
+                                    <h6>Shri Agrasen Indoor Sports Centre</h6>
+                                    <p>Mahavidyalaya is also providing facility of indoor sports for students to overcome them from their tiring schedule.</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-award-fill icon-box"></i>
+                                    <h6>Scholarship</h6>
+                                    <p>Maharaja Agrasen Shiksha Samiti (Regd.) awards scholarships to meritorious students. Mantaram scholarship for needy &meritorious students of six different courses. Diamond Medal is also introduced to the student who secure 85% and above marks in any courses.</p>
+                                </div>
+                            </div> -->
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-bus-front-fill icon-box"></i>
+                                    <h6>Bus Facility</h6>
+                                    <p>College has its own bus facility for students, plying to and from every corner of city.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card p-3 h-100 shadow-sm bg-white">
+                                    <i class="bi bi-cup-straw icon-box"></i>
+                                    <h6>Cafeteria</h6>
+                                    <p>College has a well-equipped canteen inside the campus in a hygienic environment, serving coffee/tea/soft drinks, natural fruit juice and snacks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="card mb-4 p-4 shadow-sm bg-white">
+                            <div class="d-flex align-items-start">
+                                <!-- <i class="bi bi-journal-bookmark-fill icon-box"></i> -->
+                                <i class="bi bi-award-fill icon-box primary-bg"></i>
+                                <div class="ms-3">
+                                    <h4>Scholarship</h4>
+                                    <p>
+                                       Maharaja Agrasen Shiksha Samiti (Regd.) awards scholarships to meritorious students. Mantaram scholarship for needy &meritorious students of six different courses. Diamond Medal is also introduced to the student who secure 85% and above marks in any courses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- hero section -->
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container-lg footer-top py-lg-5 py-4">
+            <div class="row gy-4 gt-md-5">
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="about-widget">
+                        <img class="footer-logo" src="assets/img/logo.webp" alt="logo">
+                        <p class="fs-6 my-3 text-light"> Maharaja Agrasen Shiksha Samiti (Regd.), <br> Maharaja Agrasen
+                            Mahavidyalaya Bareilly - UP</p>
+                        <div class="social-icons d-flex gap-3">
+                            <a class="text-light fs-5" href=""><i class="bi bi-facebook"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-instagram"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-2 col-6">
+                    <h6 class="fw-semibold text-light mb-4">Usefull Links</h6>
+                    <div class="">
+                        <ul class="p-0">
+                            <li class="pb-2"><a class="text-light" href="">Home</a></li>
+                            <li class="pb-2"><a class="text-light" href="">About us</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Services</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Events</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Features</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-2 col-6">
+                    <h6 class="fw-semibold text-light mb-4">Pages</h6>
+                    <div class="">
+                        <ul class="p-0">
+                            <li class="pb-2"><a class="text-light" href="">Home</a></li>
+                            <li class="pb-2"><a class="text-light" href="">About us</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Services</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Events</a></li>
+                            <li class="pb-2"><a class="text-light" href="">Features</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-4 footer-widget">
+                    <h6 class="text-light fw-semibold mb-4">Contact Us</h6>
+                    <ul class="contact text-light">
+
+
+                        <li>
+                            <p><i class="bi bi-envelope me-1"></i> <a href="mailto:" class="text-light">
+                                    infodeercreative@gmail.com </a></p>
+                        </li>
+                        <li>
+                            <p><i class="bi bi-phone-fill me-1"></i> <a class="text-light" href="tel:+"> (+88) 111 555
+                                    666 </a></p>
+                        </li>
+                        <li>
+                            <p> <i class="bi bi-clock-fill me-1"></i> Monday - Friday, 08:00AM - 06:00 PM</p>
+                        </li>
+                        <li>
+                            <p> <i class="bi bi-geo-alt-fill me-1"></i> 11th Km. Milestone, Bareilly-Lucknow Highway,
+                                near Transport Nagar, Bareilly, Uttar Pradesh 243123 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-3">
+            <div class="container-lg">
+                <p>
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved - Maharaja Agrasen
+                    Mahavidyalaya Bareilly
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
