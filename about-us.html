@@ -90,36 +90,7 @@
             border: 1px solid #000000;
         }
 
-        .about-section .btn-style-three:before {
-            position: absolute;
-            content: '';
-            left: 10px;
-            top: 10px;
-            z-index: -1;
-            right: -10px;
-            bottom: -10px;
-            background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
-        }
 
-        .about-section .btn-style-three:hover {
-            color: #ffffff;
-            background: #d7a449;
-        }
-
-        .about-section .btn-style-three {
-            position: relative;
-            line-height: 24px;
-            color: #252525;
-            font-size: 15px;
-            font-weight: 700;
-            background: none;
-            display: inline-block;
-            padding: 11px 40px;
-            background-color: #ffffff;
-            text-transform: capitalize;
-            border: 2px solid var(--primary-bg);
-            
-        }
 
 
         .sec-title .title {
@@ -160,72 +131,88 @@
 
         .icon-box {
             font-size: 2rem;
-            color: var(--primary-bg);
+            color: var(--primary-color);
             margin-bottom: 10px;
         }
-
-       
     </style>
 </head>
 
 
 <body>
     <!-- header -->
-    <header class="w-100 sticky-top">
-        <div class="bg-white upper-header w-100 d-none d-md-block">
-            <div class="d-flex align-items-center container-lg justify-content-between py-2">
-                <div class="left">
-                    <div class="social-icons d-flex gap-3">
-                        <a class="fs-5" href=""><i class="bi bi-facebook"></i></a>
-                        <a class="fs-5" href=""><i class="bi bi-instagram"></i></a>
+  <header class="w-100 sticky-top">
+    <div class="bg-white upper-header w-100 d-none d-md-block">
+      <div class="d-flex align-items-center container-lg justify-content-between py-2">
+        <div class="left">
+          <div class="social-icons d-flex gap-3">
+            <a class="fs-5" href=""><i class="bi bi-facebook"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-instagram"></i></a>
 
-                        <a class="fs-5" href=""><i class="bi bi-twitter-x"></i></a>
-                        <a class="fs-5" href=""><i class="bi bi-telephone-fill"></i></a>
-                        <a class="fs-5" href=""><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="right">
-                    <p class="m-0 fw-semibold"> <i class="bi bi-geo-alt-fill me-1"></i> Bareilly-Lucknow Highway,
-                        Bareilly, Uttar Pradesh </p>
-                </div>
-            </div>
+            <a class="fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-telephone-fill"></i></a>
+            <a class="fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
         </div>
-        <nav class="navbar navbar-expand-lg shadow " data-bs-theme="dark">
-            <div class="container-lg w-100">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.webp" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">All Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Admisson</a>
-                        </li>
-                    </ul>
-                    <div class="navbar-text">
-                        <a href="contact-us.html" class="btn btn-danger rounded-pill px-3">Contact us</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header -->
+        <div class="right">
+          <p class="m-0 fw-semibold"> <i class="bi bi-geo-alt-fill me-1"></i> Bareilly-Lucknow Highway,
+            Bareilly, Uttar Pradesh </p>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg shadow " data-bs-theme="dark">
+      <div class="container-lg w-100">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.webp" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">All Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="life-at-mam.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="founders.html">Our Founders</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+            <li class="nav-item d-lg-none ">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+          </ul>
+          <div class="navbar-text d-none d-lg-block">
+            <a href="contact-us.html" class="primary-btn px-3 me-1 ">Contact us</a>
+            <a href="admission.html" class="primary-btn px-3"> Registration </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
 
     <main class="mam-container-main">
         <div class="mam-container-main-inner py-lg-5 py-3 my-3 my-lg-5">
-            <!-- hero section -->
+
             <section class="about-us-container-main">
 
 
@@ -240,7 +227,7 @@
                                         <div class="title primary-color">About Us</div>
                                         <h2 class="fw-bold pe-lg-5 fs-1">Maharaja Agrasen Shiksha Samiti (Regd.)</h2>
                                     </div>
-                                    <div class=" mb-3">
+                                    <div class="mb-3">
                                         <p class="m-0">Maharaja Agrasen Shiksha Samiti (Regd.), Bareilly is a charitable
                                             trust of socially dedicated trustees. On 4th February, 1995 Maharaja Agrasen
                                             Shiksha Samiti laid down the foundation stone of Maharaja Agrasen
@@ -256,10 +243,10 @@
                                             We also Started Shri Agrasen Cricket Academy and Idea Café, Innovation
                                             Centre & NATS under the State and Central Government Scheme.</p>
                                     </div>
-                                    <div class="mb-2 fw-semibold mb-4">Request Quote:
+                                    <div class="mb-4 fw-semibold mb-4">Request Quote:
                                         <span class="">freequote@gmail.com</span>
                                     </div>
-                                    <a href="founders.html" class="theme-btn btn-style-three">Our Founders</a>
+                                    <a href="founders.html" class="primary-btn inline-block">Our Founders</a>
                                 </div>
                             </div>
 
@@ -457,8 +444,8 @@
 
                         <div class="card mb-4 p-4 shadow-sm bg-white">
                             <div class="d-flex align-items-start">
-                                <!-- <i class="bi bi-journal-bookmark-fill icon-box"></i> -->
-                                <i class="bi bi-award-fill icon-box primary-bg"></i>
+
+                                <i class="bi bi-award-fill icon-box"></i>
                                 <div class="ms-3">
                                     <h4>Scholarship</h4>
                                     <p>
@@ -473,7 +460,7 @@
                     </div>
                 </section>
             </section>
-            <!-- hero section -->
+
         </div>
     </main>
 
@@ -499,14 +486,14 @@
 
                 <!-- ROW-->
                 <div class="col-sm-6 col-lg-2 col-6">
-                    <h6 class="fw-semibold text-light mb-4">Usefull Links</h6>
+                    <h6 class="fw-semibold text-light mb-4">Page</h6>
                     <div class="">
                         <ul class="p-0">
-                            <li class="pb-2"><a class="text-light" href="">Home</a></li>
-                            <li class="pb-2"><a class="text-light" href="">About us</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Services</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Events</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Features</a></li>
+                            <li class="pb-2"><a class="text-light" href="index.html">Home</a></li>
+                            <li class="pb-2"><a class="text-light" href="about-us.html">About us</a></li>
+                            <li class="pb-2"><a class="text-light" href="courses.html">Courses</a></li>
+                            <li class="pb-2"><a class="text-light" href="life-at-mam.html">Gallery</a></li>
+                            <li class="pb-2"><a class="text-light" href="contact-us.html">Contact Us</a></li>
                         </ul>
 
                     </div>
@@ -514,14 +501,13 @@
 
                 <!-- ROW-->
                 <div class="col-sm-6 col-lg-2 col-6">
-                    <h6 class="fw-semibold text-light mb-4">Pages</h6>
+                    <h6 class="fw-semibold text-light mb-4">Usefull Links</h6>
                     <div class="">
                         <ul class="p-0">
-                            <li class="pb-2"><a class="text-light" href="">Home</a></li>
-                            <li class="pb-2"><a class="text-light" href="">About us</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Services</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Events</a></li>
-                            <li class="pb-2"><a class="text-light" href="">Features</a></li>
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Admission Registration</a></li>
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Examination Portal</a></li>
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Notice Board</a></li>
+
                         </ul>
 
                     </div>
@@ -533,19 +519,20 @@
                     <ul class="contact text-light">
 
 
-                        <li>
+                        <li class="mb-2">
                             <p><i class="bi bi-envelope me-1"></i> <a href="mailto:" class="text-light">
-                                    infodeercreative@gmail.com </a></p>
+                                    info@gmail.com </a></p>
                         </li>
-                        <li>
-                            <p><i class="bi bi-phone-fill me-1"></i> <a class="text-light" href="tel:+"> (+88) 111 555
+                        <li class="mb-2">
+                            <p><i class="bi bi-phone-fill me-1"></i> <a class="text-light" href="tel:+"> (+91) 111 555
                                     666 </a></p>
                         </li>
-                        <li>
+                        <li class="mb-2">
                             <p> <i class="bi bi-clock-fill me-1"></i> Monday - Friday, 08:00AM - 06:00 PM</p>
                         </li>
-                        <li>
-                            <p> <i class="bi bi-geo-alt-fill me-1"></i> 11th Km. Milestone, Bareilly-Lucknow Highway,
+                        <li class="mb-2">
+                            <p class="d-flex"> <i class="bi bi-geo-alt-fill me-1"></i> 11th Km. Milestone,
+                                Bareilly-Lucknow Highway,
                                 near Transport Nagar, Bareilly, Uttar Pradesh 243123 </p>
                         </li>
                     </ul>
@@ -554,13 +541,16 @@
         </div>
         <!-- copyright -->
         <div class="copyright py-3">
-            <div class="container-lg">
+            <div
+                class="container-lg d-flex justify-content-center justify-content-md-between align-items-center gap-3 flex-wrap">
                 <p>
                     Copyright ©
                     <script>document.write(new Date().getFullYear());</script> All rights reserved - Maharaja Agrasen
                     Mahavidyalaya Bareilly
 
                 </p>
+                <p class="text-center">Total Visitors: <span id="visitor-count">1000</span></p>
+
             </div>
         </div>
     </footer>
