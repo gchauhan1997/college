@@ -63,6 +63,9 @@ ul li {
     list-style-type: none;
 }
 
+
+.swiper-button-next::after, .swiper-button-prev::after { color: #fff; display: flex;align-items: center;justify-content: center; font-size: 8px;font-weight: 800; padding: 12px;background-color: var(--primary-color);border-radius: 50%;height: 18px;width: 18px; }
+
 /* navbar */
 nav.navbar {
     background-color: var(--primary-bg);
@@ -689,54 +692,6 @@ ul.our-programs>li:not(:last-child) {
 }
 
 /* couses sldier css end */
-
-/* staff slider css start*/
-
-
-.slider-staff .swiper-slide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.slider-staff .teacher-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    width: 100%;
-    height: 220px;
-    background-color: #000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.slider-staff .teacher-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.slider-staff .teacher-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-.slider-staff .teacher-name {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.slider-staff .teacher-department {
-    font-size: 13px;
-}
-/* staff slider css end*/
 
 /* contact-us page css */
 .contact .contact-info-box {
