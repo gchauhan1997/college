@@ -16,4 +16,3 @@ counterRef.once('value').then(snapshot => {
 counterRef.on('value', snapshot => {
   document.getElementById('visitor-count').innerText = snapshot.val();
 });
-
