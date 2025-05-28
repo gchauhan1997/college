@@ -36,6 +36,7 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 8px;
+    display: inline-block;
     transition: all 0.3s ease;
     ;
 }
@@ -212,7 +213,7 @@ header .upper-header a:hover i {
 .list ul li i {
     position: absolute;
     left: 0;
-    color: #e32845;
+    color: var(--primary-color);
 }
 
 .counter-card h1 {
@@ -224,47 +225,44 @@ header .upper-header a:hover i {
 }
 
 .counter-card h1 .target {
-    color: #e32845;
+    color: var(--primary-color);
     position: relative;
     top: -1px;
     margin-left: 20px;
 }
 
 a.default-btn.btn {
-    background-color: #e32845;
+    background-color: var(--primary-color);
     color: #ffffff;
     font-size: 16px;
     padding: 13px 35px;
     border-radius: 0;
     position: relative;
     transition: all ease 0.5s;
-    border: 1px solid #e32845;
-    z-index: 1;
+    border: 1px solid var(--primary-color);
     border-radius: 999px;
 }
 
+@media (max-width: 575px) {
+    .campus-content.style-2 {
+        padding: 0;
+        margin: 16px 0;
+    }
+
+    .campus-content .campus-title h2 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .counter-card h1 {
+        font-size: 36px;
+        
+    }
+    .counter-card h1 .target {margin-left: 8px;}
+    
+}
+
 /* about university ends  */
-
-/* testimonial slider */
-
-.testimonial-slider-info-2 {
-    margin-bottom: 35px;
-    position: relative;
-}
-
-.section-title {
-    max-width: 610px;
-    margin-bottom: 35px;
-}
-
-.section-title h2 {
-    font-size: 42px;
-    line-height: 1.3;
-    margin-bottom: 0;
-    color: #001e43;
-}
-
-/* testimonial ends */
 
 
 
@@ -338,18 +336,14 @@ a.default-btn.btn {
 
 /* footer */
 
-.degree-category .section-title {
-    margin: 0;
-}
-
-.section-title h3 {
+.degree-category .section-title h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
     color: #111d5e;
 }
 
-.section-title span {
+.degree-category .section-title span {
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
@@ -493,7 +487,7 @@ ul.our-programs>li:not(:last-child) {
     max-width: 605px;
     margin-left: auto;
     width: 100%;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .video-wrap>a.popup-videos {
@@ -520,80 +514,23 @@ ul.our-programs>li:not(:last-child) {
 .right-sec h2 {
     padding-bottom: 16px;
     font-weight: bold;
-    color: #111d5e;
+    color: var(--primary-bg)
 }
 
 .right-sec .desc {
     font-size: 15px;
+    margin-bottom: 12px;
 }
 
-.testimonial-slider-item {
-    padding: 41px;
-    background-color: #faf7f2;
-    margin: 0 15px;
-    border-radius: 15px;
+@media(max-width:575px) {
+    .right-sec {
+   
+    padding: 24px;
 }
-
-.testimonial-slider-item .user {
-    gap: 20px;
-    padding: 10px 00;
+.right-sec h2 {
+    padding-bottom: 12px;
+    margin: 0;
 }
-
-.testimonial-slider-item .user .image {
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 999px;
-}
-
-.testimonial-slider-item .user .image img {
-    width: 100%;
-}
-
-/* Center the dots container */
-.slick-dots {
-    display: flex !important;
-    justify-content: center;
-    padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
-}
-
-/* Style individual dots */
-.slick-dots li {
-    margin: 0 5px;
-}
-
-/* Style dot buttons */
-.slick-dots button {
-    border: none;
-    background: #ccc;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    cursor: pointer;
-    font-size: 0;
-}
-
-.slick-dots .slick-active button {
-    background: #020031;
-}
-
-.star-icon {
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.star-icon li {
-    margin: 0 2px;
-    font-size: 20px;
-    color: #020031;
-}
-
-.testimonial-sections h2.mb-3.bold {
-    margin-bottom: 30px !important;
-    font-weight: bold;
 }
 
 .video-tour .row {
