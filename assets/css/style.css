@@ -102,6 +102,12 @@ header .upper-header a:hover i {
     transition: .2s;
 }
 
+header .upper-header a {
+    color: var(--primary-bg);
+    font-weight: 500;
+}
+
+
 @media(min-width:992px) {
     .brand-main {
         width: 100%;
@@ -117,6 +123,16 @@ header .upper-header a:hover i {
 }
 
 /* navbar */
+
+/* tabs */
+.nav-tabs .nav-link { color: var(--primary-bg); }
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: var(--primary-bg);
+    border-bottom: 2px solid var(--primary-color);
+}
+/* tabs */
 
 /* hero slider */
 .hero-slider img,
@@ -243,6 +259,33 @@ a.default-btn.btn {
     border-radius: 999px;
 }
 
+@media (max-width: 991px) {
+    .campus-content.style-2 {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .campus-content .campus-title h2 {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .counter-card h1 {
+        font-size: 40px;
+
+    }
+
+    .counter-card h1 .target {
+        margin-left: 12px;
+    }
+
+    .campus-image img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+}
+
 @media (max-width: 575px) {
     .campus-content.style-2 {
         padding: 0;
@@ -256,10 +299,13 @@ a.default-btn.btn {
 
     .counter-card h1 {
         font-size: 36px;
-        
+
     }
-    .counter-card h1 .target {margin-left: 8px;}
-    
+
+    .counter-card h1 .target {
+        margin-left: 8px;
+    }
+
 }
 
 /* about university ends  */
@@ -522,15 +568,28 @@ ul.our-programs>li:not(:last-child) {
     margin-bottom: 12px;
 }
 
+@media(max-width:991px) {
+    .right-sec {
+
+        padding: 40px;
+    }
+
+    .right-sec h2 {
+        padding-bottom: 20px;
+        margin: 0;
+    }
+}
+
 @media(max-width:575px) {
     .right-sec {
-   
-    padding: 24px;
-}
-.right-sec h2 {
-    padding-bottom: 12px;
-    margin: 0;
-}
+
+        padding: 24px;
+    }
+
+    .right-sec h2 {
+        padding-bottom: 12px;
+        margin: 0;
+    }
 }
 
 .video-tour .row {
@@ -956,6 +1015,7 @@ ul.our-programs>li:not(:last-child) {
         height: 40px;
         font-size: 20px;
     }
+
     .floater-links-btn {
         bottom: 30px;
         right: 30px;

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mahavidyalaya Clubs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-100 sticky-top">
+        <div id="upper-header" class="bg-white upper-header w-100 d-none d-md-block">
+            <div class="d-flex align-items-center container-lg justify-content-between py-2">
+                <div class="left">
+                    <div class="social-icons d-flex gap-3">
+                        <a class="fs-5" href=""><i class="bi bi-facebook"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-instagram"></i></a>
+
+                        <a class="fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-telephone-fill"></i></a>
+                        <a class="fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="m-0 fw-semibold"> <i class="bi bi-geo-alt-fill me-1"></i> Bareilly-Lucknow Highway,
+                        Bareilly, Uttar Pradesh </p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg shadow " data-bs-theme="dark">
+            <div class="container-lg w-100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.webp" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">All Courses</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="life-at-mam.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="founders.html">Our Founders & facilities</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="our-clubs.html">Our Clubs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-lg-none ">
+                            <a class="nav-link" href="admission.html">Registration</a>
+                        </li>
+                        <li class="nav-item d-lg-none ">
+                            <a class="nav-link" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-text d-none d-lg-block">
+                        <a href="contact-us.html" class="primary-btn px-3 me-1 ">Contact us</a>
+                        <a href="admission.html" class="primary-btn px-3"> Registration </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header -->
+
+    <main>
+        <section class="py-3 my-3 py-lg-5 my-lg-5">
+            <div class="container-lg">
+
+                <h2 class="text-start fw-bold mb-md-5 mb-3">Mahavidyalaya Clubs</h2>
+                <div class="row g-4">
+                    <div class="col-md-9">
+                        <ul class="nav nav-tabs" id="clubTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold active" id="rejoice-tab" data-bs-toggle="tab"
+                                    data-bs-target="#rejoice" type="button" role="tab">Rejoice</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold " id="tarangini-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tarangini" type="button" role="tab">Tarangini</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="aarogya-tab" data-bs-toggle="tab"
+                                    data-bs-target="#aarogya" type="button" role="tab">Aarogya</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="global-tab" data-bs-toggle="tab"
+                                    data-bs-target="#global" type="button" role="tab">Global Tongues</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="canvas-tab" data-bs-toggle="tab"
+                                    data-bs-target="#canvas" type="button" role="tab">Creative Canvas</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="green-tab" data-bs-toggle="tab"
+                                    data-bs-target="#green" type="button" role="tab">Clean & Green</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="sajag-tab" data-bs-toggle="tab"
+                                    data-bs-target="#sajag" type="button" role="tab">Sajag</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold" id="medha-tab" data-bs-toggle="tab"
+                                    data-bs-target="#medha" type="button" role="tab">Medha</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content pt-3 my-3 py-lg-5" id="clubTabsContent">
+                            <div class="tab-pane fade  show active" id="rejoice" role="tabpanel">
+                                <h3 class="fw-bold"><i class="bi bi-trophy-fill text-danger me-2"></i> Rejoice… Club for
+                                    Sports
+                                    Activities</h3>
+                                <p class="fst-italic">(A Unit of Maharaja Agrasen Mahavidyalaya, Bareilly)</p>
+
+                                <h4 class="mt-4 fw-semibold mt-lg-5"><i
+                                        class="bi bi-info-circle-fill text-primary me-2"></i>About Us</h4>
+                                <p>
+                                    Maharaja Agrasen Mahavidyalaya, an institute of Maharaja Agrasen Shiksha Samiti
+                                    (Regd.),
+                                    Bareilly, has been scaling new heights in education and sports for 26 years.
+                                    The Mahavidyalaya has also run the Shri Agrasen Cricket Academy and is now setting
+                                    up the
+                                    <strong>"Rejoice... Sports Club"</strong> on its campus.
+                                    The club aims to promote health, social cohesion, and community engagement through
+                                    structured sports activities. It also focuses on providing opportunities for skill
+                                    development, stress relief, and fostering a sense of belonging.
+                                </p>
+
+                                <h4 class="mt-4 fw-semibold mt-lg-5"><i class="bi bi-bullseye text-success me-2"></i>Aim
+                                </h4>
+                                <p>
+                                    The primary objective of this sports club is to offer organized sports activities to
+                                    promote
+                                    physical and mental well-being.
+                                    It seeks to encourage social interaction, skill development, sportsmanship, and both
+                                    competitive and recreational participation.
+                                </p>
+
+                                <h4 class="mt-4 fw-semibold mt-lg-5"><i
+                                        class="bi bi-lightbulb-fill text-warning me-2"></i>Objective of the Club</h4>
+                                <p>
+                                    The “Rejoice... Sports Club” aims to revive and promote traditional Indian games
+                                    such as
+                                    gendtadee, sapolia, kabaddi, tug of war, and kho-kho—games that are being forgotten
+                                    in
+                                    today's digital era.
+                                    The club focuses on encouraging physical and mental health among children and youth
+                                    by
+                                    explaining the harmful effects of online games and fostering real-world physical
+                                    activities.
+                                    These traditional and modern sports will help build social harmony and a stronger
+                                    community.
+                                </p>
+
+                                <h4 class="mt-4 fw-semibold mt-lg-5"><i class="bi bi-activity text-danger me-2"></i>Our
+                                    Sports
+                                    Activities</h4>
+                                <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-2 fw-bold my-3">
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Cricket</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Badminton</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Netball</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Volleyball</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Carrom</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Ludo</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Football</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Chess</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Table Tennis</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Gendtadee</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Kho-Kho</li>
+                                    <li class="col"><i class="bi bi-dot text-primary"></i> Tug of War</li>
+                                </ul>
+
+                                <h4 class="mt-4 fw-semibold mt-lg-5"><i
+                                        class="bi bi-list-check text-success me-2"></i>Sports
+                                    Club's Rules & Regulations</h4>
+                                <ol>
+                                    <li><i class="bi bi-person-badge me-1 text-secondary"></i>Carry your Institute
+                                        Identity Card
+                                        at all times.</li>
+                                    <li><i class="bi bi-pencil-square me-1 text-secondary"></i>Sign the register before
+                                        entering
+                                        and leaving the indoor complex.</li>
+                                    <li><i class="bi bi-megaphone me-1 text-secondary"></i>Follow instructions issued by
+                                        RSC
+                                        from time to time.</li>
+                                    <li><i class="bi bi-volume-mute-fill me-1 text-secondary"></i>Maintain silence in
+                                        the Indoor
+                                        Hall.</li>
+                                    <li><i class="bi bi-cup-straw me-1 text-secondary"></i>No food, gum, or drinks
+                                        (except
+                                        water) during activities.</li>
+                                    <li><i class="bi bi-exclamation-triangle-fill me-1 text-danger"></i>No inappropriate
+                                        behavior or language.</li>
+                                    <li><i class="bi bi-box-seam me-1 text-secondary"></i>Stack equipment neatly after
+                                        use.
+                                        Report breakages.</li>
+                                    <li><i class="bi bi-shield-exclamation me-1 text-secondary"></i>RSC is not
+                                        responsible for
+                                        personal item loss or theft.</li>
+                                    <li><i class="bi bi-lightbulb-off me-1 text-secondary"></i>Turn off lights/fans
+                                        after play.
+                                        Do not tamper with electrical items.</li>
+                                    <li><i class="bi bi-ban me-1 text-danger"></i>Tobacco, pan, gutkha, and other banned
+                                        items
+                                        are strictly prohibited.</li>
+                                </ol>
+
+                                <div class="mt-5">
+                                    <p class="mb-4"><strong>Er. Dheeraj Agarwal</strong><em>(Sports Officer)</em></p>
+                                    <p><strong>Dr. Saurabh Agarwal</strong><em>(Principal)</em></p>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="tarangini" role="tabpanel">
+                                <h3>Cultural Club - <strong>Tarangini</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. Sonal Agarwal</p>
+                                <p>The Cultural Club “Tarangini” aims to foster cultural awareness and creativity among
+                                    students
+                                    by
+                                    organizing various festivals, competitions, and traditional events to preserve and
+                                    celebrate
+                                    Indian
+                                    heritage.</p>
+                            </div>
+                            <div class="tab-pane fade " id="aarogya" role="tabpanel">
+                                <h3>Health Club - <strong>Aarogya</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. A.K. Sharma</p>
+                                <p>“Aarogya” promotes healthy lifestyles through workshops, yoga sessions, and awareness
+                                    programs
+                                    focused on physical and mental well-being of students and faculty.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="global" role="tabpanel">
+                                <h3>Language Club - <strong>Global Tongues</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. Seema Shrivastav</p>
+                                <p>This club promotes linguistic skills through debates, extempore speeches, essay
+                                    writing, and
+                                    language
+                                    learning sessions, helping students gain global communication competence.</p>
+                            </div>
+                            <div class="tab-pane fade" id="canvas" role="tabpanel">
+                                <h3>Talent Club - <strong>Creative Canvas</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. Bipul Mehrotra</p>
+                                <p>“Creative Canvas” offers a platform to showcase talents in arts, music, drama, and
+                                    crafts. It
+                                    nurtures artistic expression and innovation among students.</p>
+                            </div>
+                            <div class="tab-pane fade" id="green" role="tabpanel">
+                                <h3>Environment Club - <strong>Clean & Green</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. Nazo Bi</p>
+                                <p>This club raises environmental consciousness through campaigns, tree planting drives,
+                                    cleanliness
+                                    initiatives, and sustainability workshops.</p>
+                            </div>
+                            <div class="tab-pane fade" id="sajag" role="tabpanel">
+                                <h3>Social Club - <strong>Sajag</strong></h3>
+                                <p><strong>Mentor:</strong> Mr. Shivam Gangwar</p>
+                                <p>“Sajag” is devoted to community service and awareness drives. It organizes social
+                                    welfare
+                                    activities
+                                    like blood donation camps, street plays, and awareness rallies.</p>
+                            </div>
+                            <div class="tab-pane fade" id="medha" role="tabpanel">
+                                <h3>Academic Excellence Club - <strong>Medha</strong></h3>
+                                <p><strong>Mentor:</strong> Dr. Arti Bansal</p>
+                                <p>“Medha” promotes academic brilliance through quizzes, seminars, and research-based
+                                    activities,
+                                    motivating students to achieve excellence in studies and knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Important Links Section -->
+                        <div class="w-100">
+                            <div class="card shadow-sm">
+                                <div class="card-header bg-danger text-white">
+                                    <h5 class="mb-0"><i class="bi bi-link-45deg me-2"></i>Important Links</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush fw-semibold">
+                                        <li class="list-group-item p-0 pb-2 mb-2 d-flex">
+                                            <i class="bi bi-globe2 me-2 text-primary"></i>
+                                            <a href="/" target="_blank" class="text-decoration-none text-black">MJPRU Admission
+                                                Registration</a>
+                                        </li>
+                                        <li class="list-group-item p-0 pb-2 mb-2 d-flex">
+                                            <i class="bi bi-journal-check me-2 text-success"></i>
+                                            <a href="" target="_blank" class="text-decoration-none text-black">MJPRU Examination
+                                                Portal
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item p-0 pb-2 mb-2 d-flex">
+                                            <i class="bi bi-bank me-2 text-warning"></i>
+                                            <a href="" target="_blank" class="text-decoration-none text-black">MJPRU Notice
+                                                Board</a>
+                                        </li>
+
+                                        <li class="list-group-item p-0 pb-2 mb-2 d-flex">
+                                            <i class="bi bi-question-circle-fill me-2 text-secondary"></i>
+                                            <a href="contact-us.html" class="text-decoration-none text-black">Contact Us</a>
+                                        </li>
+                                        <li class="list-group-item p-0 pb-2 mb-2 d-flex">
+                                            <i class="bi bi-person-lines-fill me-2 text-info"></i>
+                                            <a href="admission.html" class="text-decoration-none text-black">Registration</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container-lg footer-top py-lg-5 py-4">
+            <div class="row gy-4 gt-md-5">
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="about-widget">
+                        <img class="footer-logo" src="assets/img/logo.webp" alt="logo">
+                        <p class="fs-6 my-3 text-light"> Maharaja Agrasen Shiksha Samiti (Regd.), <br> Maharaja Agrasen
+                            Mahavidyalaya Bareilly - UP</p>
+                        <div class="social-icons d-flex gap-3">
+                            <a class="text-light fs-5" href=""><i class="bi bi-facebook"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-instagram"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-whatsapp"></i></a>
+                            <a class="text-light fs-5" href=""><i class="bi bi-twitter-x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-2 col-6">
+                    <h6 class="fw-semibold text-light mb-4">Page</h6>
+                    <div class="">
+                        <ul class="p-0">
+                            <li class="pb-2"><a class="text-light" href="index.html">Home</a></li>
+                            <li class="pb-2"><a class="text-light" href="about-us.html">About us</a></li>
+                            <li class="pb-2"><a class="text-light" href="courses.html">Courses</a></li>
+                            <li class="pb-2"><a class="text-light" href="life-at-mam.html">Gallery</a></li>
+                            <li class="pb-2"><a class="text-light" href="contact-us.html">Contact Us</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-2 col-6">
+                    <h6 class="fw-semibold text-light mb-4">Usefull Links</h6>
+                    <div class="">
+                        <ul class="p-0">
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Admission Registration</a></li>
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Examination Portal</a></li>
+                            <li class="pb-2"><a class="text-light" href="">MJPRU Notice Board</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- ROW-->
+                <div class="col-sm-6 col-lg-4 footer-widget">
+                    <h6 class="text-light fw-semibold mb-4">Contact Us</h6>
+                    <ul class="contact text-light">
+
+
+                        <li class="mb-2">
+                            <p><i class="bi bi-envelope me-1"></i> <a href="mailto:" class="text-light">
+                                    info@gmail.com </a></p>
+                        </li>
+                        <li class="mb-2">
+                            <p><i class="bi bi-phone-fill me-1"></i> <a class="text-light" href="tel:+"> (+91) 111 555
+                                    666 </a></p>
+                        </li>
+                        <li class="mb-2">
+                            <p> <i class="bi bi-clock-fill me-1"></i> Monday - Friday, 08:00AM - 06:00 PM</p>
+                        </li>
+                        <li class="mb-2">
+                            <p class="d-flex"> <i class="bi bi-geo-alt-fill me-1"></i> 11th Km. Milestone,
+                                Bareilly-Lucknow Highway,
+                                near Transport Nagar, Bareilly, Uttar Pradesh 243123 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-3">
+            <div
+                class="container-lg d-flex justify-content-center justify-content-md-between align-items-center gap-3 flex-wrap">
+                <p>
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved - Maharaja Agrasen
+                    Mahavidyalaya Bareilly
+
+                </p>
+                <p class="text-center">Total Visitors: <span id="visitor-count">1000</span></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

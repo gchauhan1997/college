@@ -1,3 +1,5 @@
+// total visitors counter
+
 const counterRef = firebase.database().ref('totalVisitors');
 
 // Enforce minimum of 1000 before incrementing
@@ -11,6 +13,7 @@ counterRef.once('value').then(snapshot => {
     counterRef.transaction(n => (n || 1000) + 1);
   }
 });
+// total visitors counter
 
 // Display count
 counterRef.on('value', snapshot => {
