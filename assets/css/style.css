@@ -107,6 +107,15 @@ header .upper-header a {
     font-weight: 500;
 }
 
+header #upper-header {
+  max-height: 46px; /* Adjust based on your header */
+  transition: max-height 0.8s ease, opacity 0.5s ease;
+}
+
+header #upper-header.hidden {
+  max-height: 0;
+  opacity: 0;
+}
 
 @media(min-width:992px) {
     .brand-main {
@@ -136,7 +145,9 @@ header .upper-header a {
 
 /* hero slider */
 .hero-slider img,
-.hero-slider .carousel {
+.hero-slider .carousel ,
+.hero-slider .carousel-item ,
+    .hero-slider .banner-img {
     height: calc(100vh - 145px);
     object-fit: cover;
 }
@@ -975,8 +986,17 @@ ul.our-programs>li:not(:last-child) {
     gap: 10px;
     display: block;
     transform: translateY(20px);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     z-index: 9999;
+    /* width: fit-content; */
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.menu-links.hidden {
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;   
 }
 
 .menu-links a {
@@ -1096,7 +1116,7 @@ ul.our-programs>li:not(:last-child) {
             top: 0px;
             width: 110px;
             height: 110px;
-            color: #d7a449;
+            color: var(--primary-color);
             font-size: 68px;
             font-weight: 700;
             line-height: 105px;

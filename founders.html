@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Founders Messages – Maharaja Agrasen Mahavidyalaya</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-
   <style>
     .profile-img {
       width: 120px;
@@ -35,18 +35,6 @@
       height: 100%;
     }
 
-    .message-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-
-    .social-icons a {
-      color: var(--primary-bg);
-      font-size: 20px;
-      margin-right: 15px;
-    }
-
     .dropdown-toggle::after {
       display: none;
     }
@@ -57,18 +45,13 @@
       object-fit: fill;
       width: 100%;
     }
-
-    .swiper {
-      padding: 0 4px;
-    }
   </style>
-
 </head>
 
 <body>
   <!-- header -->
   <header class="w-100 sticky-top">
-    <div class="bg-white upper-header w-100 d-none d-md-block">
+    <div id="upper-header" class="bg-white upper-header w-100 d-none d-md-block">
       <div class="d-flex align-items-center container-lg justify-content-between py-2">
         <div class="left">
           <div class="social-icons d-flex gap-3">
@@ -113,7 +96,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="life-at-mam.html">Gallery</a></li>
-                <li><a class="dropdown-item" href="founders.html">Our Founders facilities</a></li>
+                <li><a class="dropdown-item" href="founders.html">Our Founders & facilities</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -121,15 +104,15 @@
               </ul>
             </li>
             <li class="nav-item d-lg-none ">
-              <a class="nav-link" href="contact-us.html">Contact us</a>
+              <a class="nav-link" href="admission.html">Registration</a>
             </li>
             <li class="nav-item d-lg-none ">
               <a class="nav-link" href="contact-us.html">Contact us</a>
             </li>
           </ul>
           <div class="navbar-text d-none d-lg-block">
-            <a href="contact-us.html" class="primary-btn px-3 me-1 ">Contact us</a>
-            <a href="admission.html" class="primary-btn px-3"> Registration </a>
+            <a href="contact-us.html" class="primary-btn px-3 me-1 "> <i class="bi bi-envelope-fill"></i> Contact us</a>
+            <a href="admission.html" class="primary-btn px-3"><i class="bi bi-person-plus-fill"></i> Registration </a>
           </div>
         </div>
       </div>
@@ -153,7 +136,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="d-flex gap-3 align-items-center">
-                      <img src="assets/img/management/President.JPG" alt="President" class="profile-img">
+                      <img src="assets/img/management/President.webp" alt="President" class="profile-img">
                       <div>
                         <h4 class="card-title fw-bold"> Anil Kumar Agarwal</h4>
                         <span class="text-muted fw-semibold">President</span>
@@ -217,7 +200,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="d-flex gap-3 align-items-center">
-                      <img src="assets/img/management/General Secretary.JPG" alt="General Secretary"
+                      <img src="assets/img/management/General Secretary.webp" alt="General Secretary"
                         class="profile-img">
                       <div>
                         <h4 class="card-title fw-bold"> Shashi Bhushan Agarwal</h4>
@@ -292,7 +275,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="d-flex align-items-center gap-3">
-                      <img src="assets/img/management/Director.JPG" alt="Director" class="profile-img">
+                      <img src="assets/img/management/Director (2).webp" alt="Director" class="profile-img">
                       <div>
                         <h4 class="card-title fw-bold"> Dr. Praveen K. Agarwal</h4>
                         <span class="text-muted fw-semibold">Director</span>
@@ -348,7 +331,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="d-flex align-items-center gap-3">
-                      <img src="assets/img/management/Principal.jpeg" alt="Principal" class="profile-img">
+                      <img src="assets/img/management/Principal.webp" alt="Principal" class="profile-img">
                       <div>
                         <h4 class="card-title fw-bold"> Dr. Saurabh Agarwal</h4>
                         <span class="text-muted fw-semibold">Principal</span>
@@ -1260,7 +1243,7 @@
 
                 <div class="swiper-slide">
                   <div class="card faculty-card shadow-sm">
-                    <img src="assets/img/teachers/shivani.webp" class="card-img-top" alt="Faculty Photo">
+                    <img src="assets/img/teachers/shivani.webp " class="card-img-top" alt="Faculty Photo">
                     <div class="card-body">
                       <h5 class="card-title">Dr. Shivani Sharma</h5>
                       <p class="card-text"><strong>Qualification:</strong> M.A. (Hindi & English), M.Ed, Ph.D</p>
