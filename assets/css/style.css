@@ -277,7 +277,7 @@ a.default-btn.btn {
 
 @media (max-width: 991px) {
     .campus-content.style-2 {
-        padding: 0;
+        padding: 12px;
         margin: 20px 0;
     }
 
@@ -303,8 +303,13 @@ a.default-btn.btn {
 }
 
 @media (max-width: 575px) {
+    .campus-image img {
+        max-height: 280px;
+
+    }
+
     .campus-content.style-2 {
-        padding: 0;
+
         margin: 16px 0;
     }
 
@@ -453,8 +458,8 @@ a.default-btn.btn {
 }
 
 .content-part {
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -462,7 +467,7 @@ a.default-btn.btn {
     text-align: center;
     background: rgba(17, 41, 88, 0.9);
     border-radius: 3px;
-    padding: 78px 35px 0;
+    padding: 32px;
     color: #ffffff;
     opacity: 0;
     transition: all 0.3s ease;
@@ -594,6 +599,10 @@ ul.our-programs>li:not(:last-child) {
         padding-bottom: 20px;
         margin: 0;
     }
+
+    .degree-category .content-part {
+        padding: 20px 16px;
+    }
 }
 
 @media(max-width:575px) {
@@ -605,6 +614,11 @@ ul.our-programs>li:not(:last-child) {
     .right-sec h2 {
         padding-bottom: 12px;
         margin: 0;
+    }
+
+    .degree-category .section-title h3 {
+        font-size: 28px;
+        margin-bottom: 0x;
     }
 }
 
@@ -1060,6 +1074,34 @@ ul.our-programs>li:not(:last-child) {
 
 /* about page */
 
+
+.achievements-section .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.achievements-section .card-img-custom {
+    object-fit: cover;
+    height: 100%;
+    max-height: 320px;
+}
+
+.achievements-section .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.achievements-section .card h6,
+.achievements-section .card p {
+    margin: 0;
+}
+
+
+
 .about-us-container-main .sec-title .title {
     position: relative;
     color: var(--primary-bg);
@@ -1208,20 +1250,20 @@ ul.our-programs>li:not(:last-child) {
 /* addmission page */
 
 /* staff page */
-  .faculty-swiper .swiper-slide {
-  height: auto;
+.faculty-swiper .swiper-slide {
+    height: auto;
 }
 
 .faculty-card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .faculty-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -1326,4 +1368,17 @@ ul.our-programs>li:not(:last-child) {
     transform: scale(1.02);
 }
 
+
 /* gallery page */
+
+.club-img-avtar { 
+    width: 132px;
+    max-height: 132px;
+}
+
+@media (max-width:575px) {
+    .primary-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
