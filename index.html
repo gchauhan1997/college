@@ -99,7 +99,7 @@
               aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item ">
+            <div class="carousel-item  active">
               <div class="banner-img position-relative">
                 <img src="assets/img/building/auditorem.webp" class="d-block w-100" alt="img" />
               </div>
@@ -128,8 +128,9 @@
               <div class="banner-img position-relative">
                 <!-- <img src="assets/img/building/building (1).jpeg" class="d-block w-100" alt="img" /> -->
                 <video class="w-100 h-100 object-fit-cover" src="assets/img/building/college-video-banner.mp4" loop
-                  autoplay muted playsinline>
-                  Your browser does not support the video tag.
+                  autoplay muted playsinline poster="assets/img/building/main-entry.webp">
+                </video>
+                Your browser does not support the video tag.
                 </video>
               </div>
               <div class="carousel-caption text-light">
@@ -153,7 +154,7 @@
 
               </div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <div class="banner-img position-relative">
                 <img src="assets/img/building/building-red-out.webp" class="d-block w-100" alt="img" />
               </div>
@@ -825,43 +826,43 @@
   <script src="assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
-    <script>
-        // Initialize Undergraduate Courses Swiper
-        const ugSwiper = new Swiper('.course-slider', {
-            slidesPerView: 1,
-            spaceBetween: 15,
-            grabCursor: true,
-            loop: true, // Set to true if you want infinite looping
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '#ugSwiper .swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '#ugSwiper .swiper-button-next',
-                prevEl: '#ugSwiper .swiper-button-prev',
-            },
-            breakpoints: {
-                575: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                },
-            },
-        });
+  <script>
+    // Initialize Undergraduate Courses Swiper
+    const ugSwiper = new Swiper('.course-slider', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      grabCursor: true,
+      loop: true, // Set to true if you want infinite looping
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '#ugSwiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '#ugSwiper .swiper-button-next',
+        prevEl: '#ugSwiper .swiper-button-prev',
+      },
+      breakpoints: {
+        575: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
 
-       
-    </script>
+
+  </script>
   <script>
     // foalter btns js
     document.addEventListener('DOMContentLoaded', function () {
@@ -884,7 +885,7 @@
       }
     });
     // header upper hide
-     window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function () {
       const header = document.getElementById("upper-header");
       if (window.scrollY > 120) {
         header.classList.add("hidden");
