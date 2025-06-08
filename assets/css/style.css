@@ -85,6 +85,11 @@ nav.navbar {
     background-color: var(--primary-bg);
 }
 
+nav.navbar li a.nav-link{
+    color: #fff;
+}
+
+
 .navbar-brand img {
     max-width: 80px;
 }
