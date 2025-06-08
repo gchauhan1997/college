@@ -2,6 +2,7 @@
 var ugSwiper = new Swiper('.course-slider', {
   slidesPerView: 1,
   spaceBetween: 15,
+  lazy: true,
   grabCursor: true,
   loop: true, // Set to true if you want infinite looping
   autoplay: {
@@ -36,6 +37,7 @@ var ugSwiper = new Swiper('.course-slider', {
 var swiper = new Swiper('.faculty-swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
+  lazy: true,
   loop: true,
   autoplay: {
     delay: 5000,
@@ -59,7 +61,39 @@ var swiper = new Swiper('.faculty-swiper', {
 });
 
 
+// foundation slider js
+var swiper = new Swiper(".mySwiperMembers", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  lazy: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
 
+    },
+    1024: {
+      slidesPerView: 2,
+
+    },
+  },
+});
 
 // foalter btns js
 document.addEventListener('DOMContentLoaded', function () {
@@ -91,3 +125,4 @@ window.addEventListener("scroll", function () {
     header.classList.remove("hidden");
   }
 });
+
