@@ -177,37 +177,6 @@ header #upper-header.hidden {
 }
 
 
-/* footer */
-
-.footer-logo {
-    max-width: 100px;
-}
-
-.footer-section {
-    background-color: #020031;
-    background-image: url("../img/footer-bg-map.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-}
-
-
-.footer-section .copyright {
-    border-top: 1px solid #312f56;
-    text-align: center;
-}
-
-.footer-section .copyright p {
-    color: #b7b7b7;
-    margin-bottom: 0;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-
-
 /* about university  */
 
 .campus-content.style-2 {
@@ -368,7 +337,6 @@ a.default-btn.btn {
 
 
 /* footer */
-
 .footer-logo {
     max-width: 100px;
 }
@@ -548,11 +516,6 @@ ul.our-programs>li:not(:last-child) {
     align-items: flex-end;
 }
 
-.right-sec {
-    background-image: url('../img/other/right-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .video-wrap {
     max-width: 605px;
@@ -576,7 +539,7 @@ ul.our-programs>li:not(:last-child) {
 }
 
 .right-sec {
-    background-image: url('../img/other/right-bg.jpg');
+    background-image: url('../img/other/right-bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 134px 15px 150px 62px;
@@ -1251,6 +1214,13 @@ ul.our-programs>li:not(:last-child) {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+@media (max-width: 767px) {
+    .registration-page .form-section,
+    .registration-page .info-section {
+        padding: 30px 16px;
+    }
+}
+
 /* addmission page */
 
 /* staff page */
@@ -1300,10 +1270,20 @@ ul.our-programs>li:not(:last-child) {
 }
 
 .founders-staff-main .faculty-card img {
-    height: 300px;
+    height: 260px;
     object-position: top;
     object-fit: fill;
     width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 575px) {
+    
+
+    .founders-staff-main .faculty-card img {
+        height: 320px;
+    }
+
+   
 }
 
 /* staff page */
