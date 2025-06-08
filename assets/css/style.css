@@ -91,6 +91,11 @@ nav.navbar {
 nav.navbar li a.nav-link {
     color: #fff;
 }
+nav.navbar li ul a:hover,
+nav.navbar li a.nav-link:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
 
 
 .navbar-brand img {
@@ -143,14 +148,27 @@ header #upper-header.hidden {
 /* navbar */
 
 /* tabs */
-.nav-tabs .nav-link {
+.nav-pills .nav-link {
+    background-color: transparent;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
     color: var(--primary-bg);
+}
+.nav-pills .nav-link.active {
+   background-color: var(--primary-bg);
+    color: #fff;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--primary-bg) !important;
 }
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #fff;
-    background-color: var(--primary-bg);
+    color: #fff !important;
+    background-color: var(--primary-bg) !important;
     border-bottom: 2px solid var(--primary-color);
 }
 
